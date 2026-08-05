@@ -1,6 +1,8 @@
 export type ProjectImage = {
   src: string;
   alt: string;
+  width: number;
+  height: number;
 };
 
 export type Project = {
@@ -35,10 +37,10 @@ export const projects: Project[] = [
     outcome:
       "Both the rehabilitation physician and patients agreed: variable support has real potential for patients who need that level of flexibility.",
     images: [
-      { src: "/images/orthoflex/cover.jpg", alt: "Illustration of hands wearing various orthopaedic braces" },
-      { src: "/images/orthoflex/process-diamond.jpg", alt: "Double-diamond design process diagram for the Orthoflex" },
-      { src: "/images/orthoflex/progression.jpg", alt: "Four stages of the Orthoflex, from sketch to hi-fi prototype" },
-      { src: "/images/orthoflex/mechanism.jpg", alt: "Mobility mode versus support mode mechanism, worn on the hand" },
+      { src: "/images/orthoflex/cover.jpg", alt: "Illustration of hands wearing various orthopaedic braces", width: 1800, height: 1350 },
+      { src: "/images/orthoflex/process-diamond.jpg", alt: "Double-diamond design process diagram for the Orthoflex", width: 1800, height: 1030 },
+      { src: "/images/orthoflex/progression.jpg", alt: "Four stages of the Orthoflex, from sketch to hi-fi prototype", width: 1800, height: 918 },
+      { src: "/images/orthoflex/mechanism.jpg", alt: "Mobility mode versus support mode mechanism, worn on the hand", width: 1800, height: 806 },
     ],
   },
   {
@@ -58,9 +60,9 @@ export const projects: Project[] = [
     outcome:
       "Two people with a prosthetic leg tested it for an hour each and were confident in its usability — both could anticipate the touchdown of their prosthetic foot.",
     images: [
-      { src: "/images/gaitkeeper/cover-sketches.jpg", alt: "Sketch collage of the Gaitkeeper+ wearable concept" },
-      { src: "/images/gaitkeeper/prototypes-row.jpg", alt: "Early crutch-based test rig and taped prototype on a simulated socket" },
-      { src: "/images/gaitkeeper/final-render.jpg", alt: "Final Gaitkeeper+ device render, mounted on a strap" },
+      { src: "/images/gaitkeeper/cover-sketches.jpg", alt: "Sketch collage of the Gaitkeeper+ wearable concept", width: 1800, height: 1287 },
+      { src: "/images/gaitkeeper/prototypes-row.jpg", alt: "Early crutch-based test rig and taped prototype on a simulated socket", width: 1800, height: 1190 },
+      { src: "/images/gaitkeeper/final-render.jpg", alt: "Final Gaitkeeper+ device render, mounted on a strap", width: 1532, height: 1800 },
     ],
   },
   {
@@ -80,8 +82,8 @@ export const projects: Project[] = [
     outcome:
       "A working prototype, built and photographed, then mocked up as a real HEMA product listing to test the pitch end to end.",
     images: [
-      { src: "/images/backpack/hero.jpg", alt: "The modular backpack prototype on a wooden table" },
-      { src: "/images/backpack/hema-ad.jpg", alt: "Mock HEMA product listing for the modular backpack" },
+      { src: "/images/backpack/hero.jpg", alt: "The modular backpack prototype on a wooden table", width: 1800, height: 1605 },
+      { src: "/images/backpack/hema-ad.jpg", alt: "Mock HEMA product listing for the modular backpack", width: 1800, height: 1030 },
     ],
   },
   {
@@ -100,9 +102,9 @@ export const projects: Project[] = [
     outcome:
       "Consistent flow rate and cleanability were the hardest problems to solve. The material was shown off in two lamp shades and a woven basket form.",
     images: [
-      { src: "/images/paste/hero.jpg", alt: "Three 3D-printed paste forms in white, tan and black" },
-      { src: "/images/paste/material-grid.jpg", alt: "Grid of test prints across different paste combinations" },
-      { src: "/images/paste/extrusion-hardware.jpg", alt: "Prototype paste extruder hardware" },
+      { src: "/images/paste/hero.jpg", alt: "Three 3D-printed paste forms in white, tan and black", width: 1800, height: 1350 },
+      { src: "/images/paste/material-grid.jpg", alt: "Grid of test prints across different paste combinations", width: 1364, height: 1800 },
+      { src: "/images/paste/extrusion-hardware.jpg", alt: "Prototype paste extruder hardware", width: 1600, height: 1560 },
     ],
   },
   {
@@ -121,8 +123,8 @@ export const projects: Project[] = [
     outcome:
       "A complete design-for-manufacture package: mold design, FEA-verified structure, and full exploded assembly.",
     images: [
-      { src: "/images/hive/hero.jpg", alt: "The Hive bluetooth speaker, hexagonal housing on a rock" },
-      { src: "/images/hive/exploded-detail.jpg", alt: "Cutaway detail of the Hive speaker's internal assembly" },
+      { src: "/images/hive/hero.jpg", alt: "The Hive bluetooth speaker, hexagonal housing on a rock", width: 1800, height: 1387 },
+      { src: "/images/hive/exploded-detail.jpg", alt: "Cutaway detail of the Hive speaker's internal assembly", width: 1540, height: 1620 },
     ],
   },
 ];

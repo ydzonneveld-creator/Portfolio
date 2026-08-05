@@ -36,7 +36,7 @@ export function SpecRail() {
   return (
     <nav
       aria-label="Section navigation"
-      className="fixed left-0 top-0 z-40 hidden h-dvh w-14 flex-col items-center justify-center border-r border-wood-soft/40 lg:flex xl:w-16"
+      className="fixed left-0 top-0 z-40 hidden h-dvh w-14 flex-col items-center justify-center border-r border-graphite lg:flex xl:w-16"
     >
       <ul className="flex flex-col gap-5">
         {sections.map((section) => {
@@ -49,9 +49,9 @@ export function SpecRail() {
                 aria-current={isActive ? "true" : undefined}
               >
                 <span
-                  className={`h-6 w-px transition-colors ${isActive ? "bg-signal" : "bg-wood-soft group-hover:bg-stone-dim"}`}
+                  className={`h-6 w-px transition-colors ${isActive ? "bg-silver" : "bg-graphite group-hover:bg-silver-dim"}`}
                 />
-                <span className={isActive ? "text-signal" : "text-wood-soft group-hover:text-stone-dim"}>
+                <span className={isActive ? "text-ink" : "text-silver-dim/70 group-hover:text-silver-dim"}>
                   {section.index}
                 </span>
               </a>

@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --color-base: #1b1815;
-  --color-base-2: #24201b;
-  --color-wood: #9c6b43;
-  --color-wood-soft: #6b4c33;
-  --color-stone: #ede6db;
-  --color-stone-dim: #cabfab;
-  --color-signal: #3fc9de;
-  --color-tick: #c4552e;
+  --color-base: #050505;
+  --color-base-2: #0e0e0e;
+  --color-graphite: #262626;
+  --color-graphite-soft: #1a1a1a;
+  --color-silver: #c9c9c9;
+  --color-silver-dim: #8a8a8a;
+  --color-ink: #f2f2f0;
+  --gradient-luxury: linear-gradient(135deg, #4a4a4a 0%, #1c1c1c 45%, #545454 75%, #1c1c1c 100%);
+  --gradient-luxury-text: linear-gradient(135deg, #ffffff 0%, #b8b8b8 45%, #ffffff 75%, #d4d4d4 100%);
 }
 
 @theme inline {
   --color-base: var(--color-base);
   --color-base-2: var(--color-base-2);
-  --color-wood: var(--color-wood);
-  --color-wood-soft: var(--color-wood-soft);
-  --color-stone: var(--color-stone);
-  --color-stone-dim: var(--color-stone-dim);
-  --color-signal: var(--color-signal);
-  --color-tick: var(--color-tick);
+  --color-graphite: var(--color-graphite);
+  --color-graphite-soft: var(--color-graphite-soft);
+  --color-silver: var(--color-silver);
+  --color-silver-dim: var(--color-silver-dim);
+  --color-ink: var(--color-ink);
 
   --font-display: var(--font-display);
   --font-body: var(--font-body);
@@ -32,20 +32,36 @@ html {
 
 body {
   background: var(--color-base);
-  color: var(--color-stone);
+  color: var(--color-ink);
   font-family: var(--font-body), serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: var(--color-signal);
+  background: var(--color-silver);
   color: var(--color-base);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-signal);
+  outline: 2px solid var(--color-silver);
   outline-offset: 3px;
+}
+
+.text-gradient-luxury {
+  background-image: var(--gradient-luxury-text);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gradient-luxury {
+  background-image: var(--gradient-luxury);
+}
+
+.border-gradient-luxury {
+  border-image: var(--gradient-luxury) 1;
 }
 
 @media (prefers-reduced-motion: reduce) {

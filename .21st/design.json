@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "project": {
+    "name": "portfolio-website",
+    "productType": null,
+    "stack": [
+      "nextjs",
+      "react",
+      "tailwind-v4"
+    ]
+  },
+  "sources": {
+    "tokens": [
+      "src/app/globals.css"
+    ],
+    "components": [],
+    "assets": [
+      "public/images"
+    ],
+    "instructions": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  "design": {
+    "colorMode": "light",
+    "colors": {
+      "--color-base": {
+        "value": "var(--color-base)",
+        "source": "src/app/globals.css"
+      },
+      "--color-base-2": {
+        "value": "var(--color-base-2)",
+        "source": "src/app/globals.css"
+      },
+      "--color-wood": {
+        "value": "var(--color-wood)",
+        "source": "src/app/globals.css"
+      },
+      "--color-wood-soft": {
+        "value": "var(--color-wood-soft)",
+        "source": "src/app/globals.css"
+      },
+      "--color-stone": {
+        "value": "var(--color-stone)",
+        "source": "src/app/globals.css"
+      },
+      "--color-stone-dim": {
+        "value": "var(--color-stone-dim)",
+        "source": "src/app/globals.css"
+      },
+      "--color-signal": {
+        "value": "var(--color-signal)",
+        "source": "src/app/globals.css"
+      },
+      "--color-tick": {
+        "value": "var(--color-tick)",
+        "source": "src/app/globals.css"
+      }
+    },
+    "typography": {
+      "--font-display": {
+        "value": "var(--font-display)",
+        "source": "src/app/globals.css"
+      },
+      "--font-body": {
+        "value": "var(--font-body)",
+        "source": "src/app/globals.css"
+      },
+      "--font-mono": {
+        "value": "var(--font-mono)",
+        "source": "src/app/globals.css"
+      }
+    },
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "unknown"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [],
+    "avoid": []
+  },
+  "decisions": [],
+  "evidence": [
+    {
+      "fact": "design.colorMode:light",
+      "source": "src/app/globals.css"
+    },
+    {
+      "fact": "design.tokens",
+      "source": "src/app/globals.css"
+    },
+    {
+      "fact": "project.instructions",
+      "source": "AGENTS.md"
+    },
+    {
+      "fact": "project.instructions",
+      "source": "CLAUDE.md"
+    },
+    {
+      "fact": "project.stack:nextjs",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:react",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:tailwind-v4",
+      "source": "package.json"
+    }
+  ],
+  "generatedAt": "2026-08-05T20:26:51.974Z"
+}

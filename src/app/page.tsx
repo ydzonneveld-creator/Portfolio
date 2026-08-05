@@ -14,7 +14,7 @@ export default function Home() {
         <Hero />
         <ProcessTimeline />
         {projects.map((project, i) => (
-          <ProjectSection key={project.slug} project={project} reversed={i % 2 === 1} />
+          <ProjectSection key={project.slug} project={project} reversed={i % 2 === 1} priority={i === 0} />
         ))}
         <SkillsStrip />
         <SiteFooter />
